@@ -1,8 +1,8 @@
-#Fitness Tracker
+# Fitness Tracker
 
 A fitness app designed to keep track of certain weight lifting benchmarks.
 
-##Resources
+## Resources
 
 * [Chart.js](https://www.chartjs.org/)
 * [Express](https://expressjs.com/)
