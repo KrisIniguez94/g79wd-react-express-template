@@ -1,38 +1,37 @@
-# React Single Repo Example
+#Fitness Tracker
 
-This is an example repository to show how you could have an API and React client in the same repositories. It includes setup for knex.
+A fitness app designed to keep track of certain weight lifting benchmarks.
 
-## Installation
-1. `createdb mycoolapp` (you can change the name of the db in `knexfile.js`)
-1. `yarn && cd client && yarn`
+##Resources
 
-## Local Development
+* [Chart.js](https://www.chartjs.org/)
+* [Express](https://expressjs.com/)
+* [Knex](https://knexjs.org/)
+* [Knex: Cheat Sheet](https://devhints.io/knex)
+* [npm: cors](https://www.npmjs.com/package/cors)
 
-Locally, you may run the following command:
+## Installing
 
-```bash
-npm run dev
-```
+A step by step series of examples that tell you how to get your development env running
 
-This will run both the client and server on different ports. You will be prompted to go to `3000`.
+* Make sure to clone this projects client repository as well as the back-end found [here](https://github.com/KrisIniguez94/Q2-Project-API)
+* The current database MUST be configured to your database.
+* In your knexfile.js, update the connection from the original to 'postgres://localhost/{DATABASE}'.
+* On Linux and Windows systems, PostgreSQL may require a username/password for PostgreSQL. Refer to [PostgreSQL ](https://www.postgresql.org/docs/10/static/client-authentication.html) for more details. \* Example: 'postgres://{USERNAME}:{PASSWORD}@localhost/{DATABASE NAME}'
+* Once the database and connection has been set up, simply run "npm start" in the root directory of the backend.
 
-## Production Development
+## Built With
 
-To test as a production build, you may run the following command:
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [React](https://reactjs.org/)
+* [NPM](https://www.npmjs.com/)
+* [Node](https://nodejs.org/en/)
+* [PostgreSQL](https://www.postgresql.org/)
 
-```bash
-npm start
-```
+## Authors
 
-This will build a new version of the client into a `build/` folder. It will then run the server which will deliver the client. In this case, you will want to go to port `3004` by default.
+* **Kris Iniguez** - [KrisIniguez94](https://github.com/KrisIniguez94)
 
-## Deployment
+## License
 
-To deploy to Heroku, you simply need to run:
-
-```bash
-heroku create
-git push heroku master
-```
-
-The `postinstall` script will make sure all relevant packages are installed.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
